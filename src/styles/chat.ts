@@ -1,0 +1,106 @@
+import {StyleSheet} from 'react-native';
+import colors from '../constants/colors';
+
+const useStyles = StyleSheet.create({
+  root: {
+    height: '100%',
+    width: '100%',
+    padding: 0,
+    margin: 0,
+  },
+  chat_scroll: {
+    width: '100%',
+    height: '100%',
+    padding: 5,
+  },
+  chat_container: {
+    padding: 15,
+    paddingBottom: 25,
+    width: '100%',
+    display: 'flex',
+    flexDirection: 'column',
+    alignItems: 'flex-start',
+    height: '100%',
+  },
+  chat: {
+    padding: 8,
+    borderRadius: 15,
+    backgroundColor: colors.Pink400,
+    maxWidth: '55%',
+    position: 'relative',
+    paddingBottom: 3,
+    marginBottom: 8,
+  },
+  chat_me: {
+    padding: 8,
+    borderRadius: 15,
+    backgroundColor: colors.Pink100,
+    maxWidth: '55%',
+    position: 'relative',
+    paddingBottom: 3,
+    marginBottom: 8,
+    alignSelf: 'flex-end',
+  },
+  message: {
+    color: colors.white,
+  },
+  message_time: {color: colors.White300, fontSize: 10, alignSelf: 'flex-end'},
+  bot: {
+    backgroundColor: colors.Pink400,
+    height: 10,
+    width: 10,
+    position: 'absolute',
+    top: '50%',
+    left: -5,
+    borderBottomLeftRadius: 50,
+    transform: [{rotate: '-135deg'}],
+  },
+  bot_me: {
+    backgroundColor: colors.Pink100,
+    height: 10,
+    width: 10,
+    position: 'absolute',
+    top: '50%',
+    right: -5,
+    borderBottomLeftRadius: 50,
+    transform: [{rotate: '45deg'}],
+  },
+  form_group: {
+    padding: 10,
+  },
+  message_form: {
+    display: 'flex',
+    flexDirection: 'row',
+    alignItems: 'center',
+    width: '100%',
+    overflow: 'hidden',
+    padding: 5,
+    borderColor: colors.White300,
+    borderRadius: 10,
+    borderWidth: 1,
+    paddingVertical: 6,
+  },
+  input_group: {
+    flex: 1,
+    padding: 0,
+    borderColor: colors.White200,
+    borderWidth: 1,
+  },
+  input: {
+    padding: 4,
+  },
+  emoji_container: {
+    padding: 10,
+    height: '50%',
+    width: '100%',
+    position: 'absolute',
+    left: 0,
+    bottom: 0,
+    backgroundColor: colors.white,
+    alignSelf: 'center',
+    zIndex: 9999,
+    alignItems: 'baseline',
+  },
+});
+
+export default useStyles;
